@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Azurian Hacks | Scripts
+        </title>
+
+        <style>
+            a:link {
+                text-decoration:transparent;
+            }
+            a:hover {
+                    text-decoration:underline;
+                }
+
+                body {
+  background-image: url('images.jpg');
+}
+                
+        </style>
+    </head>
+    <header style="font-size: 100px; text-align: center; background-color: green;">Azurian Hacks E.G. Scripts</header>
+
+    <body>
+        <a href="main.html"><p style="color:rgb(50, 255, 100); text-align: center;">click to go back to the main page</p></a>
+
+        <p2 style="font-size: 35px; background-color: grey;">CAR SCRIPT:
+        <br> local car = script.Parent.Parent.Car:Clone()
+        <br>	while true do
+        <br>	    wait(5)
+        <br>    local n = script.Parent.Parent:FindFirstChild("Car") == nil
+        <br>    if (n or (script.Parent.Position - script.Parent.Parent.Car.VehicleSeat.Position).magnitude > 40) then
+        <br>        if (n ~= true) then
+        <br>            script.Parent.Parent.Car.Parent = game.Workspace
+        <br>        end
+        <br>        local c = car:Clone()
+        <br>        c.Parent = script.Parent.Parent
+        <br>        c:makeJoints()
+        <br>    end
+        <br>end
+        </p2>
+
+        
+
+    </body>
+</html>
